@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+
+{% block content %} 
+<div id="content">
+  <div class="col-lg-offset-1 col-md-4 col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <form class="form" role="form">
+            <div class="form-group">
+              <input type="text" class="form-control input-lg" id="large3" placeholder="{{ device.device_name }}">
+              <label for="large3">Device</label>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control input-lg" id="large3" placeholder="{{ device.clinic_name }}">
+                <label for="large3">Clinic Name</label>
+              </div>
+              <div class="form-group">
+                  <input type="text" class="form-control input-lg" id="large3" placeholder=" {{ device.number_id }}">
+                  <label for="large3">Device ID</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control input-lg" id="large3" placeholder=" {{ device.date_of_purchase }}">
+                    <label for="large3">Purchase Date</label>
+                  </div>
+            
+          </form>
+        </div><!--end .card-body -->
+      </div><!--end .card -->
+      <em class="text-caption">Device Details</em>
+    </div><!--end .col -->
+
+     <!--Menu set up -->
+            <!-- BEGIN MENUBAR-->
+            <div id="menubar" class="menubar-inverse ">
+                <div class="menubar-fixed-panel">
+                  <div>
+                    <a class="btn btn-icon-toggle btn-default menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </div>
+                  <div class="expanded">
+                    <a href="{% url 'index' %}">
+                      <span class="text-lg text-bold text-primary ">REALDRIP</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="menubar-scroll-panel">
+        
+                  <!-- BEGIN MAIN MENU -->
+                  <ul id="main-menu" class="gui-controls">
+        
+                    <!-- BEGIN DASHBOARD -->
+                    <li>
+                      <a href="{% url 'index' %}" class="active">
+                        <div class="gui-icon"><i class="md md-home"></i></div>
+                        <span class="title">Dashboard</span>
+                      </a>
+                    </li><!--end /menu-li -->
+                    <!-- END DASHBOARD -->
+        
+                    <!-- BEGIN PATIENT -->
+                    <li class="gui-folder">
+                      <a>
+                        <div class="gui-icon"><i class="fa fa-puzzle-piece fa-fw"></i></div>
+                        <span class="title">Patients</span>
+                      </a>
+                      <!--start submenu -->
+                      <ul>
+                        <li><a href="{% url 'patients' %}" ><span class="title">Patients List</span></a></li>
+                        <li><a href="{% url 'patient_create' %}" ><span class="title">Register Patient</span></a></li>
+                      </ul><!--end /submenu -->
+                    </li><!--end /menu-li -->
+                    <!-- END PATIENT -->
+        
+                    <!-- BEGIN DEVICE -->
+                    <li class="gui-folder">
+                      <a>
+                        <div class="gui-icon"><i class="fa fa-table"></i></div>
+                        <span class="title">Device</span>
+                      </a>
+                      <!--start submenu -->
+                      <ul>
+                        <li><a href="{% url 'devices' %}" ><span class="title">Device List</span></a></li>
+                        <li><a href="{% url 'device_create' %}" ><span class="title">Register Device</span></a></li>
+                      </ul><!--end /submenu -->
+                    </li><!--end /menu-li -->
+                    <!-- END DEVICE -->
+        
+                    <!-- BEGIN USER -->
+                    <li class="gui-folder">
+                      <a>
+                        <div class="gui-icon"><span class="md md-account-box"></span></div>
+                        <span class="title">{{ user.get_username }}</span>
+                      </a>
+                      <!--start submenu -->
+                      <ul>
+                        <li><a href="{% url 'password_change' %}" ><span class="title">Change Password</span></a></li>
+                        <li><a href="{% url 'logout' %}" ><span class="title">Logout</span></a></li>
+                        
+                      </ul><!--end /submenu -->
+                    </li><!--end /menu-li -->
+                    <!-- END USER -->
+        
+                    <!-- BEGIN SETTINGS -->
+                    <li>
+                      <a href="" >
+                        <div class="gui-icon"><i class="md md-settings-overscan"></i></div>
+                        <span class="title">Settings</span>
+                      </a>
+                    </li><!--end /menu-li -->
+                    <!-- END CHARTS -->
+                  </ul><!--end .main-menu -->
+                  <!-- END MAIN MENU -->
+        
+                  <div class="menubar-foot-panel">
+                    <small class="no-linebreak hidden-folded">
+                      <span class="opacity-75">Copyright &copy; 2018</span> <strong>RealDrip</strong>
+                    </small>
+                  </div>
+                </div><!--end .menubar-scroll-panel-->
+              </div><!--end #menubar-->
+              <!-- END MENUBAR -->   
+  </div>
+{% endblock %}
