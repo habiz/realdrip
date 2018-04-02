@@ -1,0 +1,206 @@
+/*.navbar-nav {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+/** Login Page CSS **/
+
+
+.main-page{
+    margin-top: 70px;
+}
+
+.widget-shadow {
+    background-color: #fff;
+    box-shadow: 0 -1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+	-webkit-box-shadow: 0 -1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+	-moz-box-shadow: 0 -1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+}
+h2.title1,h3.title1 {
+    font-size: 1.7em;
+    color: #629aa9;
+    margin-bottom: 0.8em;
+}
+.title-block{
+    font-size: 1.7em;
+    color: #629aa9;
+    margin-bottom: 0.8em;
+    margin-left: 250px;
+}
+p.title-warning{
+    font-size: 1.5em;
+    color: red;
+    margin-bottom: 0.8em;
+
+}
+.login-page {
+    width: 40%;
+    margin: 1em auto 0;
+}
+.signup-page {
+    width: 40%;
+    margin: 1em auto 0;
+}
+.login-page h2.title1,.signup-page h2.title1{
+    text-align: center;
+    padding: 1em;
+    background: #629aa9;
+    border-bottom: 10px solid #4b7884;
+    margin: 0;
+	color: #fff;
+    font-size: 1.6em;
+}
+.login-top {
+    padding: 1.5em;
+    border-bottom: 1px solid #DED9D9;
+    text-align: center;
+}
+.login-body {
+	padding: 4em 2em;
+}
+.login-top  h4 {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8em;
+}
+.login-top  h4  a {
+    color: #e94e02;
+}
+.login-top  h4  a:hover{
+    color: #555;
+}
+/*.form-fill {
+    font-size: 1em;
+    padding: 14px 15px 14px 37px;
+    width: 100%;
+    color: #A8A8A8;
+    outline: none;
+    border: 1px solid #D3D3D3;
+    background: #FFFFFF;
+    margin: 0em 0em 1.5em 0em;
+}*/
+.login-page input.user {
+    background: url(../images/user.png)no-repeat 8px 16px #fff;
+}
+.login-page input.lock {
+    background: url(../images/lock.png)no-repeat 8px 16px #fff;
+}
+.login-page label.checkbox {
+    margin: 0 0 0 1.3em;
+    font-size: 1em;
+    color: #555;
+    font-weight: 400;
+    display: inline-block;
+    
+}
+.login-page label.checkbox {
+    margin-left: 1.3em;
+}
+.login-page label.checkbox {
+    margin-left: 1.3em;
+    font-size: 1em;
+    color: #555;
+    font-weight: 400;
+    display: inline-block;
+	cursor: pointer;
+}
+.forgot-grid {
+    margin-bottom: 1.2em;
+}
+.forgot {
+    float: right;
+}
+.forgot a {
+    font-size: 1em;
+    color: #555;
+    display:block;
+}
+.forgot a:hover{
+    color: #f2b33f;
+}
+.login-page input[type="submit"] {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    background: #F2B33F;
+    width: 40%;
+    padding: .6em 1em;
+    font-size: 1em;
+    margin: 0.5em auto 0;
+    display: block;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	-o-transition: 0.5s all;
+}
+.login-page input[type="submit"]:hover{
+    background: #337ab7;
+}
+.login-page-bottom {
+    text-align: center;
+}
+.social-btn {
+    display: inline-block;
+    background: #3B5998;
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+}
+.registration {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 16px;
+}
+.registration a {
+    color: #337ab7;
+}
+
+.registration a:hover{
+    color: #f2b33f;
+}
+.social-btn i {
+    color: #fff;
+    padding: .8em 1.3em;
+    font-size: 0.9em;
+	vertical-align: middle;
+}
+.social-btn i.fa {
+    background-color: #354F88;
+    padding: .6em 1em;
+    font-size: 1.1em;
+	transition:.5s all;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+}
+.social-btn:hover {
+	background:#354F88;
+}
+.social-btn.sb-two {
+    background-color: #45B0E3;
+	margin-left: 2em;
+}
+.social-btn i.fa.fa-twitter {
+    background-color: #40A2D1;
+}
+.social-btn.sb-two:hover{
+    background-color: #40A2D1;
+}
+.login-page-bottom h5 {
+    font-size: 1.5em;
+    color: #524C4F;
+    font-weight: 800;
+    margin: 1em 0;
+}
+.social-btn:hover i.fa {
+    transform: rotateY(360deg);
+	-moz-transform: rotateY(360deg);
+	-webkit-transform: rotateY(360deg);
+	-o-transform: rotateY(360deg);
+	-ms-transform: rotateY(360deg);
+}
+/*--//login-page--*/
