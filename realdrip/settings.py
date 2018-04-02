@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'realdrip.azurewebsites.net',
+    '127.0.0.1',
 ]
 
 
@@ -122,9 +123,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
-STATIC_ROOT = path.join(PROJECT_ROOT, 'static').replace('\\', '/') 
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
+STATIC_ROOT = ''
 STATIC_URL = '/static/'
-STATICFILES_DIRS = ()
+
 
 # Redirect to home URL after login (Default redirects to /accounts/profile/)
 LOGIN_REDIRECT_URL = '/'
