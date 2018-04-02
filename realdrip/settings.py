@@ -25,7 +25,9 @@ SECRET_KEY = '#%0jg==o!$0!d9c!#aoeqf@qnj=jb!=3!b^4l%+*t6pf0nr&d#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'realdrip.azurewebsites.net',
+]
 
 
 # Application definition
