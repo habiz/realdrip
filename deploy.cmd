@@ -74,7 +74,7 @@ pushd "%DEPLOYMENT_TARGET%"
 :: 2. Create virtual environment
  IF NOT EXIST "%DEPLOYMENT_TARGET%\env" (
    echo Creating %PYTHON_RUNTIME% virtual environment.
-   D:\home\python364x64\python.exe -m pip3 install virtualenv
+   D:\home\python364x64\python.exe -m pip install virtualenv
    D:\home\python364x64\python.exe -m virtualenv env
    IF !ERRORLEVEL! NEQ 0 goto error
  ) ELSE (
@@ -83,8 +83,8 @@ pushd "%DEPLOYMENT_TARGET%"
 
 
 :: 3. Install packages
-echo Pip3 install requirements.
-env\Scripts\python.exe -m pip3 install --upgrade -r requirements.txt
+echo Pip install requirements.
+env\Scripts\python.exe -m pip install --upgrade -r requirements.txt
 IF !ERRORLEVEL! NEQ 0 goto error
 
 popd
